@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <button id="homeb" onclick="history.back()"><img src="Image/home_button.png" height="100" width="160"></button>
+    </div>
+    <h1>Library Book Tracker</h1>
+        <h2>Add Book</h2>
+        <form id="book-form">
+            <label for="book-title"><b>Book Title:</b></label>
+            <input type="text" id="book-title" name="bookTitle" required>
+            <label for="borrower-name"><b>Borrower Name:</b></label>
+            <input type="text" id="borrower-name" name="borrowerName" required>
+            <button type="submit" id="borrowbutton"><img src="Image/br_button.png" height="80" width="150"></button>
+        </form>
+    </div>
+    <div class="details">
+        <div id="book-list">
+            <h2>Borrowed Books</h2>
+            <ul id="borrowed-books"></ul>
+        </div>
+        <div id="add-book">
+            <div id="return-book">
+                <h2>Return Book</h2>
+                <select id="return-book-select"></select>
+                <button type="button" id="return-btn">Return Book</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

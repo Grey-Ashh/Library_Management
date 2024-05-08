@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>LIBRARY</h1>
+    <div>
+        <a href="record/index.html" class="rec">RECORDS</a>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="search-box" placeholder="Search for a book...">
+    </div>
+    <h2>Book Catalog</h2>
+    <div id="book-list">
+    </div>
+    <button id="add-book-btn"><img src="Images/add_button.png" width="50" height="50" ></button>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-image: url("Image/record_bgimg.jpg");
+    height: 100vh;
+    width: 100vw;
+    color: goldenrod;
+}
+
+h1, h2 {
+    margin: 1rem 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 7vh;
+}
+
+#book-list, #add-book, #return-book {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 50vw;
+}
+
+#borrowed-books {
+    list-style: none;
+    padding: 0;
+    color: #ddd;
+}
+
+#borrowed-books li {
+    margin-bottom: 0.5rem;
+    color: #ddd;
+}
+
+#book-form {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    font-size: 20px;
+}
+
+#return-book-select {
+    width: 100%;
+}
+
+.details{
+    display: flex;
+    height: 75vh;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#return-book{
+    width: 45vw;
+}
+
+#borrower-name, #book-title{
+    width: 50vh;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    height: 3vh;
+    background-color: #ddd;
+}
+
+#borrowbutton{
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+}
+
+
+#homeb{
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+}
